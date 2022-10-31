@@ -1,0 +1,349 @@
+body {
+    font-family: Gill Sans Extrabold, sans-serif;
+    /* font-family: cursive; */
+    background-image: url(/images/IMG_6716.JPG );
+    /* background-color: rgb(224, 211, 213); */
+}
+.header {
+    background-color: rgb(36, 31, 31);
+    padding: 10px;
+    border: 2px solid rgb(163, 159, 159);
+    min-width: 100%;
+    text-align: center;
+    color: white;
+    margin: -60px 0 0 -10px  ;
+    position: fixed;
+    overflow: auto;
+}
+
+
+/*Start Sid Bar*/
+.dashbordright{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    margin:40px 50px 0 100px;
+}
+.dashbordright2{
+    display: grid;
+    width: 250px;
+    height: 100px;
+    margin:100px 50px 0 400px;
+}
+.dashbordright i{
+    background-color: rgb(38 95 120);
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    color: #ccc;
+    width: 60px;
+}
+.one{
+    margin: 16px 0 0px 20px;
+}
+.one a:hover{
+    color: black;
+}
+.one i{
+    margin:10px 45px 0 0;;
+}
+.sidebar {
+    margin: 0 0 -15px -8px;
+    padding: 0 ;
+    width: 200px;
+    background-color: rgb(36, 31, 31);
+    border: 2px solid rgb(163, 159, 159);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: small;
+}
+.sidebar .sidebarItem{
+    padding: 8px 20px 15px 10px;
+    font-size: 15px;
+}
+.sidebar h6 {
+    font-size: small;
+    display: contents;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 3px;
+    position: relative;
+    z-index: 3;
+}
+.sidebarhedin{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.sidebar .active,
+.sidebar .sidebarItem:hover {
+    color: white;
+    background-color: rgb(134, 10, 97);
+}
+/*End Sid Bar*/
+
+/*Start */
+.haddin {
+    background-color: rgb(134, 10, 97);
+    padding: 10px;
+    margin: 15px 0;
+}
+.khader {
+    display: inline-block;
+    color: black;
+    padding: 5px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: right;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0 0 10px 10px;
+    width: 125px;
+    height: 100px;
+}
+.khader:hover{
+    border: 2px solid black;
+}
+
+.two {
+    margin: 10px 0 20px 210px;
+}
+
+.khader h6 {
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 1px;
+    margin: 1 3px -3px 0;
+}
+hr{
+    border-bottom: 1px solid black ;
+    margin: -2px ;
+}
+.textarbic {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-right: 10px;
+}
+.three {
+    margin-left: 210px
+}
+.one .view {
+    display: flex;
+    margin-top: 5px;
+}
+.one .view >i{
+    margin:6px 10px 0 5px;
+    opacity: 0.7;
+}
+.one .view h6{
+    opacity:0.5;
+    margin-right:100px;
+    margin-top:5px;
+}
+/**/
+
+/* Start Add Student*/
+.adstudent label{
+    margin-left: 15px;
+}
+input[type=text],input[type=date],input[type=email],input[type=number], select {
+    width: 22%;
+    padding: 7px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.but{
+    width: 25%;
+    background-color: rgb(170, 6, 121);
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0 0 30%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.but:hover h5 {
+    color: black;
+    font-weight: bold;
+}
+input:focus {
+    background-color: rgb(194, 135, 176);
+}
+/* End Add Student*/
+
+/*Start Table*/
+.RomHead {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+.RomHeadItem{
+    margin: 20px 0 ;
+    width: 300px;
+    height: 50px;
+    padding-top:15px;
+    font-weight: bold;
+    background-color: rgb(170, 6, 121);
+    border: 1px solid rgb(170, 6, 121);
+}
+.RomHeadItem:hover{
+    background-color:rgb(134, 10, 97) ;
+    border: 1px solid rgb(134, 10, 97);
+}
+/*End Table*/
+
+/*Start Table Work*/
+.headerWork{
+    text-align: center;
+    color:rgb(134, 10, 97) ;
+}
+.kk{
+    border: 3px solid black;
+}
+.thed,.the,.ter,.tde,.bod{
+    height: 70px;
+    border: 1px solid;
+    text-align: center;
+    width: 150px;
+    border-right: 3px solid black;
+    font-size: large;
+}
+table .the{
+    font-weight: bolder;
+}
+.colore{
+    background-color: rgb(201, 189, 212);
+}
+.createClass{
+    border-style:double ;
+    border-radius: 2%;
+    margin: 50px 0 0 250px;
+    height: 325px;
+    width: 500px;
+}
+
+.labWork{
+    margin-left:25px ;
+}
+/*End Table Work*/
+
+.dd{
+    width: 100%;
+}
+.dd .d{
+    width: 150px;
+}
+
+input[type=checkbox]{
+    margin-left: 35px;
+}
+
+.adstudent .labCheck{
+    margin-left:0;
+    font-size: large
+}
+/*نفقات*/
+
+
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.chartCard {
+    align-items: center;
+    justify-content: center;
+}
+.chartBox {
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(212, 196, 226);
+    margin-left: 35%;
+}
+.theExam{
+    margin-top: 0px;
+}
+/*Start Edit Work*/
+.tableEdit{
+    width: 124px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+.colore2{
+    background-color: rgb(227 222 244);
+}
+/*End Edit Work*/
+/*///////////////////////////*/
+
+
+
+.chartCard {
+    width: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.instIlement{
+    border-color: blueviolet;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 0 0 15px;
+    width: 500px;
+}
+.intaltotal{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.edExamSave{
+    width:200px;
+    margin-left:253px;
+    background-color:rgb(170, 6, 121);
+    border: 1px solid rgb(170, 6, 121);
+}
+.edExamSave:hover h5{
+    color: black;
+    font-weight: bold;
+}
+.edExamSave:hover{
+
+    background-color:rgb(170, 6, 121);
+    border: 1px solid rgb(170, 6, 121);
+}
+.tde input[type=date],input[type=time]{
+    padding: 0;
+    margin: 0;
+    width: 145px;
+    height: 70px;
+}
+
+.headeredit{
+    margin-left: 30%;
+    color: #866bdf;
+    font-family: cursive;
+}
+/*///////////////////////////*/

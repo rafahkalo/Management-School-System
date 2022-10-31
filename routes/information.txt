@@ -1,0 +1,38 @@
+$users = DB::table('users')->count();
+$price = DB::table('orders')->max('price');
+$price = DB::table('orders')
+                ->where('finalized', 1)
+                ->avg('price');
+if (DB::table('orders')->where('finalized', 1)->exists()) {
+    // ...
+}
+if (DB::table('orders')->where('finalized', 1)->doesntExist()) {
+    // ...
+}
+$users = DB::table('users')
+            ->select('name', 'email as user_email')
+            ->get();
+$users = DB::table('users')->distinct()->get();
+
+//If you already have a query builder instance and you wish to add a column to its
+//existing select clause, you may use the addSelect method:
+
+$query = DB::table('users')->select('name');
+$users = $query->addSelect('age')->get();
+
+$orders = DB::table('orders')
+                ->orderByRaw('updated_at - created_at DESC')
+                ->get();
+//inner join
+$users = DB::table('users')
+            ->join('contacts', 'users.id', '=', 'contacts.user_id')
+            ->join('orders', 'users.id', '=', 'orders.user_id')
+            ->select('users.*', 'contacts.phone', 'orders.price')
+            ->get();
+$users = DB::table('users')
+            ->leftJoin('posts', 'users.id', '=', 'posts.user_id')
+            ->get();
+
+$users = DB::table('users')
+            ->rightJoin('posts', 'users.id', '=', 'posts.user_id')
+            ->get();
